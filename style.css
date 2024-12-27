@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-image: url('https://images.unsplash.com/photo-1517235067428-27404a9d4e6f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fG1vZGVybiUyMG9mZmljZXxlbnwwfDB8fGh0bWw'); /* Professional Office Background Image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Darkened overlay for text visibility */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(44, 62, 80, 0.7); /* Slightly transparent background */
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 80px 30px 30px 30px; /* Increased the top margin to add more space between header and other elements */
+}
+
+header .header-content {
+    flex: 1;
+    text-align: left;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.5;
+    color: white; /* Ensuring text is white for contrast */
+}
+
+header .technologies {
+    margin-top: 20px;
+}
+
+header .tech-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+header .tech-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+header .tech-logo:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(44, 62, 80, 0.8); /* More transparent background */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #18bc9c;
+    border-bottom: 2px solid #18bc9c;
+    transform: scale(1.1);
+}
+
+/* Section Styling with Better Text Contrast */
+section {
+    padding: 80px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Faded white background for content sections */
+    color: #2c3e50; /* Dark color for better readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section p {
+    color: #2c3e50; /* Ensuring headings and text are dark enough */
+}
+
+/* Project Section */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #2c3e50; /* Dark color for headings */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #18bc9c;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(44, 62, 80, 0.8); /* More transparent background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #18bc9c;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #18bc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2c3e50;
+}
