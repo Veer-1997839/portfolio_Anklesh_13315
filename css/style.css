@@ -314,10 +314,10 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/anklesh\ passport.jpg) right bottom no-repeat;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+                url(../img/anklesh\ passport.jpg) right bottom no-repeat;
     background-size: contain;
 }
-
 .header p {
     color: #FF6F61;
     font-size: 22px;
