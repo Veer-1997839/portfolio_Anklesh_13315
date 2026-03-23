@@ -314,9 +314,17 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
-                url(../img/anklesh\ passport.jpg) right bottom no-repeat;
+    background: url(../img/anklesh\ passport.jpg) right bottom no-repeat;
     background-size: contain;
+}
+
+/* Mobile / small screens */
+@media (max-width: 768px) {
+    .header .content-inner {
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+                    url(../img/anklesh\ passport.jpg) right bottom no-repeat;
+        background-size: contain;
+    }
 }
 .header p {
     color: #FF6F61;
